@@ -168,7 +168,7 @@
             </intent-filter>
         </service>
         <service android:name=".LocationUpdaterServic"></service>
-        <service android:name="com.asmarainnovations.taxidriver.RegistrationIntentService"></service>
+        <service android:name=".RegistrationIntentService"></service>
         <service android:name="com.asmarainnovations.taxidriver.ReverseGeocoderDestinationIntentService"></service>
         <service
             android:name=".FetchAddressIntentService"
@@ -178,7 +178,7 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyCEWfIIKQaHkPSCGAMbQO4nGM4XP3ueG_4" />
+            android:value="com.asmarainnovations.taxidriver.API_KEY" />
 
     </application>
 
