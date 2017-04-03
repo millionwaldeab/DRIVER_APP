@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Million\\AndroidStudioProjects\\TAXIDRIVER\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\actionbar_cab_icon.png",
+        "source": "C:\\Users\\Million\\AndroidStudioProjects\\TAXIDRIVER\\app\\src\\main\\res\\mipmap-xxhdpi\\actionbar_cab_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Million\\AndroidStudioProjects\\TAXIDRIVER\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\app_icon.png",
+        "source": "C:\\Users\\Million\\AndroidStudioProjects\\TAXIDRIVER\\app\\src\\main\\res\\mipmap-xxhdpi\\app_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Million\\AndroidStudioProjects\\TAXIDRIVER\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\Million\\AndroidStudioProjects\\TAXIDRIVER\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    }
+]

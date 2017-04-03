@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MCHOT TAXI DRIVER</string>
+    <string name="action_settings">Settings</string>
+    <string name="bgetdirections">Get directions</string>
+    <string name="stringenteraddress">Enter destination address</string>
+    <string name="new_request">New Request</string>
+    <string name="acceptrequest">Accept</string>
+    <string name="rejectrequest">Decline</string>
+    <string name="to_destination">To Destination</string>
+    <string name="your_taxi">Your Taxi at The Palm of Your Hands</string>
+    <string name="website_name">www.asmarasoftwaresolutions.com</string>
+    <string name="register">Register</string>
+    <string name="update_googleplay">Please install or update your Google Play Services on your phone</string>
+    <string name="service_not_available">No service/network available</string>
+    <string name="invalid_lat_lon">No valid latitude/longitude provided</string>
+    <string name="no_address_found">No matching address found</string>
+    <string name="error_no_app_found">No app to handle the requested task found</string>
+    <string name="invalid_input">INVALID_INPUT</string>
+    <string name="valid_number_format">Number without -</string>
+    <string name="drawer_open">Open Navigation Drawer</string>
+    <string name="drawer_close">Close Navigation Drawer</string>
+    <string name="signup">SIGN UP</string>
+    <string name="signout">SIGN OUT</string>
+    <string name="go_online">GO ONLINE</string>
+    <string name="enter_verification_code">Enter the vrification code here</string>
+    <string name="tel">Telephone</string>
+    <string name="misc_Title">Miscellaneous stuff</string>
+    <string name="contact_us_Title">Contact Us</string>
+    <string name="submit_contact_us">Submit</string>
+    <string name="name">Name</string>
+    <string name="company_name">Company</string>
+    <string name="license_expiry">License Expires</string>
+    <string name="taxi_number">Taxi Number</string>
+    <string name="taxi_type">Taxi Type</string>
+    <string name="taxi_fare">Your Fare</string>
+    <string name="browse_License">Browse for License</string>
+    <string name="driver_business_permit">Permit</string>
+    <string name="driver_license">Driver License</string>
+    <string name="upload_License">Upload Current License</string>
+    <string name="upload_docs">Please upload business permit, driver license and other documents one at a time before you sign up. Just take a picture and upload</string>
+    <string name="promotions">Promotions</string>
+    <string name="no_promotions">Sorry, currently there are no promotions</string>
+    <string name="you_agree_to_terms">By clicking to the above button you agree to the terms and conditions of this app.</string>
+    <string name="terms_and_conditions_title">Terms and Conditions</string>
+    <string name="terms_and_conditions_content">Include all your user terms and conditions here</string>
+
+    <!--string array to feed the types spinner-->
+    <string-array name="taxi_types">
+        <item>Regular Sedan</item>
+        <item>Van</item>
+        <item>Wheelchair accessible</item>
+    </string-array>
+</resources>

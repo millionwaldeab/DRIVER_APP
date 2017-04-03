@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.asmarainnovations.taxidriver"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.asmarainnovations.taxi.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="com.asmarainnovations.taxi.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.asmarainnovations.taxidriver.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.asmarainnovations.taxidriver.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="com.asmarainnovations.taxi.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <permission android:name="com.asmarainnovations.taxidriver.c2dm.permission.RECEIVE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <!-- Permissions required for GCM -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@android:style/Theme.Holo.Light" >
+
+        <!-- the above two lines are to avoid outofmemory error and crashing of the app -->
+        <activity
+            android:name="com.asmarainnovations.taxidriver.Login"
+            android:label="@string/app_name"
+            android:logo="@mipmap/actionbar_cab_icon"
+            android:noHistory="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.asmarainnovations.taxidriver.MainActivity"
+            android:label="@string/app_name"
+            android:logo="@mipmap/actionbar_cab_icon"
+            android:noHistory="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.asmarainnovations.taxidriver.MapActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:logo="@mipmap/actionbar_cab_icon" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAPACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.asmarainnovations.taxidriver.Promotions"
+            android:label="@string/app_name"
+            android:logo="@mipmap/actionbar_cab_icon" >
+            <intent-filter>
+                <action android:name="android.intent.action.PROMOTIONS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.asmarainnovations.taxidriver.Legal"
+            android:label="@string/app_name"
+            android:logo="@mipmap/actionbar_cab_icon" >
+            <intent-filter>
+                <action android:name="android.intent.action.LEGAL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.asmarainnovations.taxidriver.ContactUs"
+            android:label="@string/app_name"
+            android:logo="@mipmap/actionbar_cab_icon" >
+            <intent-filter>
+                <action android:name="android.intent.action.CONTACTUS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.asmarainnovations.taxidriver.Miscellaneous"
+            android:label="@string/app_name"
+            android:logo="@mipmap/actionbar_cab_icon" >
+            <intent-filter>
+                <action android:name="android.intent.action.MISCELLANEOUS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.asmarainnovations.taxidriver.VerificationCode"
+            android:label="@string/app_name"
+            android:logo="@mipmap/actionbar_cab_icon" >
+            <intent-filter>
+                <action android:name="android.intent.action.VERIFICATIONCODE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.asmarainnovations.taxidriver.MapActivity$cancellationreceiver" >
+            <intent-filter>
+                <action android:name="com.asmarainnovations.MapActivity.MyGcmListenerService.CANCEL" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- this is to support pre KitKat -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.asmarainnovations.taxi" />
+                <category android:name="com.asmarainnovations.taxidriver" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.asmarainnovations.taxidriver.Login$RegistrationResponseReceiver" >
+            <intent-filter>
+                <action android:name="com.asmarainnovations.taxidriver.Login.RegistrationResponseReceiver.ACTION_RESP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.asmarainnovations.taxidriver.MapActivity$MyGcmListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.asmarainnovations.taxidriver.Login$MyInstanceIDListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service android:name="com.asmarainnovations.taxidriver.LocationUpdaterServic" />
+        <service android:name="com.asmarainnovations.taxidriver.RegistrationIntentService" />
+        <service android:name="com.asmarainnovations.taxidriver.ReverseGeocoderDestinationIntentService" />
+        <service
+            android:name="com.asmarainnovations.taxidriver.FetchAddressIntentService"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCEWfIIKQaHkPSCGAMbQO4nGM4XP3ueG_4" />
+
+        <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+            android:theme="@style/Theme.IAPTheme" />
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.android.gms.measurement.AppMeasurementContentProvider"
+            android:authorities="com.asmarainnovations.taxidriver.google_measurement_service"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

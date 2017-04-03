@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:background="@color/black"
+    android:paddingLeft="15sp"
+    android:paddingRight="15sp"
+    android:paddingTop="15sp"
+    android:paddingBottom="15sp">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/yellow"
+        android:text="@string/register"
+        android:id="@+id/tvregister"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingTop="15sp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:id="@+id/tvname"
+            android:textColor="@color/yellow"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_weight="25"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textColor="@color/yellow"
+            android:layout_weight="75"
+            android:id="@+id/etname" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="15sp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tel"
+            android:id="@+id/tvtel"
+            android:textColor="@color/yellow"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_weight="30"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/valid_number_format"
+            android:inputType="phone"
+            android:textColor="@color/yellow"
+            android:layout_weight="70"
+            android:id="@+id/ettel" />
+    </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="15sp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/company_name"
+                android:id="@+id/tvCompany"
+                android:textColor="@color/yellow"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_weight="30"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/yellow"
+                android:layout_weight="70"
+                android:id="@+id/etCompany" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="15sp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/taxi_number"
+                android:id="@+id/tvTaxiNumber"
+                android:textColor="@color/yellow"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_weight="40"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/yellow"
+                android:layout_weight="60"
+                android:id="@+id/etTaxiNumber" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="15sp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/license_expiry"
+                android:id="@+id/tvExipiry"
+                android:textColor="@color/yellow"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_weight="47"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:hint="DD-MM-YYYY"
+                android:textColor="@color/yellow"
+                android:layout_weight="53"
+                android:id="@+id/etLicenseExpiry" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="15sp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/taxi_type"
+            android:id="@+id/tvType"
+            android:textColor="@color/yellow"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_weight="30"/>
+
+        <Spinner
+            android:id="@+id/spType"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="70"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/taxi_types"
+            android:spinnerMode="dropdown"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="15sp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/taxi_fare"
+                android:id="@+id/tvRates"
+                android:textColor="@color/yellow"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_weight="30" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:textColor="@color/yellow"
+                android:ems="10"
+                android:id="@+id/etRates"
+                android:layout_weight="70" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:text="@string/upload_docs"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:visibility="visible"    >
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+            android:id="@+id/buttonLoadPicture"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_button"
+            android:textColor="@color/yellow"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/browse_License" >
+        </Button>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/blue_button"
+            android:text="@string/upload_License"
+            android:textColor="@color/yellow"
+            android:id="@+id/bUploadLicense"
+            android:layout_weight="1"/>
+        </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/blue_button"
+        android:textColor="@color/yellow"
+        android:text="@string/signup"
+        android:id="@+id/bsignup" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_gravity="center"
+            android:textColor="@color/yellow"
+            android:text="@string/you_agree_to_terms"
+            android:id="@+id/tvterms" />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

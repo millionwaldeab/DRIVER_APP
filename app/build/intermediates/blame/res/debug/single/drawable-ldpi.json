@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "C:\\Users\\Million\\AndroidStudioProjects\\TAXIDRIVER\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\taxi_description.png",
+        "source": "C:\\Users\\Million\\AndroidStudioProjects\\TAXIDRIVER\\app\\src\\main\\res\\drawable-ldpi\\taxi_description.png"
+    },
+    {
+        "merged": "C:\\Users\\Million\\AndroidStudioProjects\\TAXIDRIVER\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\movingcab.png",
+        "source": "C:\\Users\\Million\\AndroidStudioProjects\\TAXIDRIVER\\app\\src\\main\\res\\drawable-ldpi\\movingcab.png"
+    },
+    {
+        "merged": "C:\\Users\\Million\\AndroidStudioProjects\\TAXIDRIVER\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\app_icon.png",
+        "source": "C:\\Users\\Million\\AndroidStudioProjects\\TAXIDRIVER\\app\\src\\main\\res\\drawable-ldpi\\app_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Million\\AndroidStudioProjects\\TAXIDRIVER\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\taxi_feature_graphic_1.png",
+        "source": "C:\\Users\\Million\\AndroidStudioProjects\\TAXIDRIVER\\app\\src\\main\\res\\drawable-ldpi\\taxi_feature_graphic_1.png"
+    },
+    {
+        "merged": "C:\\Users\\Million\\AndroidStudioProjects\\TAXIDRIVER\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\custom_location_icon.png",
+        "source": "C:\\Users\\Million\\AndroidStudioProjects\\TAXIDRIVER\\app\\src\\main\\res\\drawable-ldpi\\custom_location_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Million\\AndroidStudioProjects\\TAXIDRIVER\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\taxi_feature_graphic_2.png",
+        "source": "C:\\Users\\Million\\AndroidStudioProjects\\TAXIDRIVER\\app\\src\\main\\res\\drawable-ldpi\\taxi_feature_graphic_2.png"
+    },
+    {
+        "merged": "C:\\Users\\Million\\AndroidStudioProjects\\TAXIDRIVER\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\old_icon.png",
+        "source": "C:\\Users\\Million\\AndroidStudioProjects\\TAXIDRIVER\\app\\src\\main\\res\\drawable-ldpi\\old_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Million\\AndroidStudioProjects\\TAXIDRIVER\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\custom_passenger.png",
+        "source": "C:\\Users\\Million\\AndroidStudioProjects\\TAXIDRIVER\\app\\src\\main\\res\\drawable-ldpi\\custom_passenger.png"
+    }
+]

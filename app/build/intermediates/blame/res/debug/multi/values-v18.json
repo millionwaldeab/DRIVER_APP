@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "C:\\Users\\Million\\AndroidStudioProjects\\TAXIDRIVER\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 48,
+                    "endOffset": 99
+                },
+                "from": {
+                    "file": "C:\\Users\\Million\\.android\\build-cache\\2569b1f8e96b66f4d2124dc0ee267d829b8414c8\\output\\res\\values-v18\\values-v18.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 280,
+                        "endColumn": 48,
+                        "endOffset": 324
+                    }
+                }
+            }
+        ]
+    }
+]
